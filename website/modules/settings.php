@@ -2,9 +2,9 @@
 /**
 * Arquivo de configuração do MuSite v2.5.x
 * Tenha muita atenção ao editar esse arquivo.
-* A cada 100 reportagens de bugs no site, 80 ou mais 
+* A cada 100 reportagens de bugs no site, 80 ou mais
 * são decorrencia de erros na configuração desse arquivo!
-* 
+*
 * By Leandro Daldegam
 */
 
@@ -25,15 +25,15 @@ define("autenticationCache", true); // Guarda a chave de segurança em cache para
 /*
     @Configurações do banco de dados
 */
-define('HOST', 'localhost'); //Host do Banco de dados
+define('HOST', '51.161.75.161'); //Host do Banco de dados
 define('USER', 'sa'); //Login do Mssql
-define('PWD', 'microsoft'); //Senha do Mssql
+define('PWD', 'Sem@na5133'); //Senha do Mssql
 define('DATABASE', 'webSite'); //Banco de dados do website
-define('DATABASE_ACCOUNTS', 'MuOnline'); //Banco de dados onde ficam as contas 
+define('DATABASE_ACCOUNTS', 'MuOnline'); //Banco de dados onde ficam as contas
 define('DATABASE_CHARACTERS', 'MuOnline'); //Banco de dados onde ficam os personagens
 define('PERSISTENT_CONNECTION', false); //Deixa a conexão com o banco de dados persistente
 define('USE_MD5', 0); // Usa md5? 0 para não, 1 para sim
-define('VI_CURR_INFO', FALSE); //Joinserver com sistema de idade, TRUE para sim, FALSE para nao    
+define('VI_CURR_INFO', FALSE); //Joinserver com sistema de idade, TRUE para sim, FALSE para nao
 define('COLUMN_RESETS','Resets');           //Coluna onde ficam armazenados os Resets na character
 define('COLUMN_MASTER_RESETS','MResets');   //Coluna onde ficam armazenados os Master Resets na character
 define('COLUMN_RESETS_WEEK','resetsWeek');   //Coluna onde ficam armazenados os Resets semanais na character
@@ -48,7 +48,7 @@ define('COLUMN_PK_RANKING','PkCountWeb');   //Coluna onde ficam armazenados a co
     @Exemplo    $Config_SMTP['User']        = "daldegam@mudkt.com.br";  //Usuário Servidor
     @Exemplo    $Config_SMTP['Password']    = "***"; //Senha Servidor
     @Exemplo    $Config_SMTP['Debug']       = false; //Debug (Apenas para usuários avançados)
-    @Exemplo    $Config_SMTP['From']        = "daldegam@mudkt.com.br";  //Remetente dos emails                               
+    @Exemplo    $Config_SMTP['From']        = "daldegam@mudkt.com.br";  //Remetente dos emails
 
     @Exemplo de como usar o SMTP do Gmail da Google: (Para Gmail a extension=php_openssl.dll deve estar habilitada)
     @Exemplo    $Config_SMTP['Server']      = "ssl://smtp.gmail.com";    //Servidor SMTP
@@ -56,16 +56,16 @@ define('COLUMN_PK_RANKING','PkCountWeb');   //Coluna onde ficam armazenados a co
     @Exemplo    $Config_SMTP['User']        = "daldegam@gmail.com";  //Usuário Servidor
     @Exemplo    $Config_SMTP['Password']    = "***"; //Senha Servidor
     @Exemplo    $Config_SMTP['Debug']       = false; //Debug (Apenas para usuários avançados)
-    @Exemplo    $Config_SMTP['From']        = "daldegam@gmail.com";  //Remetente dos emails  
-        
-    @Exemplo de como usar o SMTP do Yahoo Mail: 
+    @Exemplo    $Config_SMTP['From']        = "daldegam@gmail.com";  //Remetente dos emails
+
+    @Exemplo de como usar o SMTP do Yahoo Mail:
     @Exemplo    $Config_SMTP['Server']      = "smtp.mail.yahoo.com.br";    //Servidor SMTP
     @Exemplo    $Config_SMTP['Port']        = 25;   //Porta do servidor SMTP 25 ou 587
     @Exemplo    $Config_SMTP['User']        = "daldegam@yahoo.com.br";  //Usuário Servidor
     @Exemplo    $Config_SMTP['Password']    = "***"; //Senha Servidor
     @Exemplo    $Config_SMTP['Debug']       = false; //Debug (Apenas para usuários avançados)
     @Exemplo    $Config_SMTP['From']        = "daldegam@yahoo.com.br";  //Remetente dos emails
-    
+
     @PARA ALTERAR AS CONFIGURAÇÕES ALTERE LOGO ABAIXO:
 */
 $Config_SMTP['Server']      = "smtp.mail.yahoo.com.br";    //Servidor SMTP
@@ -86,11 +86,11 @@ define('SHOPPING_LINK','#LinkShop'); //Link do shopping
 
 /*
     @Na linha abaixo, coloque:
-    0 para Season 1 ou Abaixo - Sem DL 
-    1 para Season 1 ou Abaixo 
-    2 para Season 2 
-    3 para Season 3 Episodio 
-    4 para Season 3 Episodio 2, Até Season 5 
+    0 para Season 1 ou Abaixo - Sem DL
+    1 para Season 1 ou Abaixo
+    2 para Season 2
+    3 para Season 3 Episodio
+    4 para Season 3 Episodio 2, Até Season 5
     5 para Season 6
     6 para Season 6.2 ou acima
 */
@@ -157,14 +157,14 @@ define('TEMPLATE_DIR', 'single'); // sunonline, ja_sanidine_free, refresh, darks
 */
 $PANELUSER_PREMISSIONS['MODIFY_DATA'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Alterar dados
 $PANELUSER_PREMISSIONS['CLEAN_VAULT'] = array(/*Ligar*/ 1, /*Free*/ 0, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Limpar bau
-$PANELUSER_PREMISSIONS['DOUBLE_VAULT'] = array(/*Ligar*/ 1, /*Free*/ 0, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Bau duplo      
+$PANELUSER_PREMISSIONS['DOUBLE_VAULT'] = array(/*Ligar*/ 1, /*Free*/ 0, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Bau duplo
 $PANELUSER_PREMISSIONS['VIRTUAL_VAULT'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Bau virtual
 $PANELUSER_PREMISSIONS['GAME_DISCONNECT'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Desconectar conta
 $PANELUSER_PREMISSIONS['GOLDEN_ARCHER'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Golden Archer
 $PANELUSER_PREMISSIONS['COLLECTOR_POINTS'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Coletor de pontos
 $PANELUSER_PREMISSIONS['AUCTIONS'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Leilões
 $PANELUSER_PREMISSIONS['LOG_BUYS'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Log de compras
-$PANELUSER_PREMISSIONS['MODIFY_PERSONALID'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Alterar personal ID     
+$PANELUSER_PREMISSIONS['MODIFY_PERSONALID'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Alterar personal ID
 $PANELUSER_PREMISSIONS['RESET'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Resetar
 $PANELUSER_PREMISSIONS['MASTER_RESET'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Master Reset
 $PANELUSER_PREMISSIONS['RESET_TRANSFER'] = array(/*Ligar*/ 1, /*Free*/ 0, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Transferir reset
@@ -276,7 +276,7 @@ $PANELUSER_MODULE['DISTRIBUTE_POINTS']['MAXPOINTS'] = 32767; //Valor máximo de p
     @Configurações Painel do Usuário.
     @Modulo: Mover Personagem
 */
-$PANELUSER_MODULE['MOVE_CHARACTER']['MAPS'] = array(/*Numero do mapa, Nome do mapa, Coordenada X, Coordenada Y*/    
+$PANELUSER_MODULE['MOVE_CHARACTER']['MAPS'] = array(/*Numero do mapa, Nome do mapa, Coordenada X, Coordenada Y*/
                                                     array(0,"Lorencia",147,127),
                                                     array(1,"Dungeon",107,247),
                                                     array(2,"Davias",197,46),
@@ -307,7 +307,7 @@ $PANELUSER_MODULE['MOVE_CHARACTER']['MAPS'] = array(/*Numero do mapa, Nome do ma
                                                     array(79, "LorenMarket", 126, 142),
                                                     array(80, "Karutan", 124, 123)
                                                 );
-                                                
+
 /*
     @Configurações Painel do Usuário.
     @Modulo: Comprar Vips
@@ -342,7 +342,7 @@ $Config_SMS[0]['Email_Sufixo']        = "@clarotorpedo.com.br";    //Final do em
 /*
     @Configurações de classes.
 */
-$CLASS_CHARACTERS['CLASSCODES'] = array(/*IDENTIFICAÇÃO*/ /*CLASSCODE*/ /*CLASSNAME*/ 
+$CLASS_CHARACTERS['CLASSCODES'] = array(/*IDENTIFICAÇÃO*/ /*CLASSCODE*/ /*CLASSNAME*/
                                         "DW" => array(0, "Dark Wizard"),
                                         "SM" => array(1, "Soul Master"),
                                         "GM" => array(2, "Grand Master"), //Algumas versões usam 3
@@ -362,10 +362,10 @@ $CLASS_CHARACTERS['CLASSCODES'] = array(/*IDENTIFICAÇÃO*/ /*CLASSCODE*/ /*CLASSN
                                         "RF" => array(96, "Rage Fighter"),
                                         "FM" => array(98, "Fist Master")
                                         );
-                                        
+
 /*
     @Configurações do cadastro.
-*/                                                                                    
+*/
 $REGISTER_SETTINGS['EMAIL_ACTIVE'] = true; //Ativação por email [TENHA CERTEZA QUE SEU SERVIDOR DE SMTP ESTA FUNCIONANDO PARA ATIVAR ESTA OPÇÃO! TESTE O CADASTRO APÓS A ATIVAÇÃO!].
 $REGISTER_SETTINGS['USERNAME']['FORCELOWER'] = true; //Força o login a ser minusculo.
 $REGISTER_SETTINGS['BONUS_VIP']['ACTIVE'] = true; //Ativa bonus de vip no cadastro.
@@ -381,7 +381,7 @@ $REGISTER_SETTINGS['BONUS_ITEM']['VERSION'] = 3; //1 = (Versões antigas sem pers
 * Como configurar o sistema abaixo:
 * O sistema está configurado para dar um Kit de Blade Knight, Soul Master, Muse Elf por padrão, para cadastrar mais itens ou kits, siga a logica dos exemplos;
 * Atenção, mesmo que você use uma versão antiga que não contenha sockets, harmony e etc, não remova a opção, e sim, apenas coloque o valor correspondente a ela desligada!
-* 
+*
 * A opção: "Name", deve conter o nome do kit a ser entregue para o player
 * A opção: "Items", deve conter os items a serem entregues para o player
 *   Dentro da opção "Items", existe as propriedades:
@@ -402,7 +402,7 @@ $REGISTER_SETTINGS['BONUS_ITEM']['VERSION'] = 3; //1 = (Versões antigas sem pers
 */
 $REGISTER_SETTINGS['BONUS_ITEM']['ITEMS'] = array(
     array(
-        "Name" => "Kit de Blade Knight", 
+        "Name" => "Kit de Blade Knight",
         "Items" => array(
             array("idCategorie" => 7, "idItem" => 17, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
             array("idCategorie" => 8, "idItem" => 17, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
@@ -414,7 +414,7 @@ $REGISTER_SETTINGS['BONUS_ITEM']['ITEMS'] = array(
         )
     ),
     array(
-        "Name" => "Kit de Soul Master", 
+        "Name" => "Kit de Soul Master",
         "Items" => array(
             array("idCategorie" => 7, "idItem" => 22, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
             array("idCategorie" => 8, "idItem" => 22, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
@@ -426,7 +426,7 @@ $REGISTER_SETTINGS['BONUS_ITEM']['ITEMS'] = array(
         )
     ),
     array(
-        "Name" => "Kit de Muse Elf", 
+        "Name" => "Kit de Muse Elf",
         "Items" => array(
             array("idCategorie" => 7, "idItem" => 24, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
             array("idCategorie" => 8, "idItem" => 24, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
@@ -447,104 +447,104 @@ $TABLES_CONFIGS['WEBVIPS'] = array("database" => DATABASE, //webSite || MuOnline
                                    "table" => "webVips", //webVips || MEMB_INFO
                                    "columnUsername" => "username", //username || memb___id
                                    "columnType" => "type", //type || vip
-                                   "columnDateBegin" => "dateBegin", 
+                                   "columnDateBegin" => "dateBegin",
                                    "columnDateEnd" => "dateEnd",
                                    "columnDateEndInteger" => "dateEndInteger");
-                                   
+
 $TABLES_CONFIGS['WEBCASH'] = array("database" => DATABASE, //webSite || MuOnline
                                    "table" => "webCash", //webCash || MEMB_INFO
                                    "columnUsername" => "username", //username || memb___id
                                    "columnAmount" => "amount", //amount || gold
                                    "columnAmount2" => "amount2", //amount2 || gold2
-                                   "columnPoints" => "points"); //points 
-  
+                                   "columnPoints" => "points"); //points
+
 /*
     @Configurações dos rankings da pagina inicial
 */
-$RANKING_HOME_CONFIGS['TOPAMOUNT'] = 4; //Mostrar Top 3 nos rankings da pagina inicial                     
+$RANKING_HOME_CONFIGS['TOPAMOUNT'] = 4; //Mostrar Top 3 nos rankings da pagina inicial
 $RANKING_HOME_STATS['RANKING_RESETS_HOME'] = true; // true = ligar / false = desligar (Ranking de resets)
-$RANKING_HOME_STATS['RANKING_RESETS_WEEK_HOME'] = true; // true = ligar / false = desligar (Ranking de resets semanal)  
-$RANKING_HOME_STATS['RANKING_RESETS_MONTH_HOME'] = true; // true = ligar / false = desligar (Ranking de resets mensal)  
-$RANKING_HOME_STATS['RANKING_MASTER_RESETS_HOME'] = true; // true = ligar / false = desligar (Ranking de resets mensal)  
-$RANKING_HOME_STATS['RANKING_PK_HOME'] = true; // true = ligar / false = desligar (Ranking de PK)  
-$RANKING_HOME_STATS['RANKING_LEVELS_HOME'] = true; // true = ligar / false = desligar (Ranking de Levels)  
-$RANKING_HOME_STATS['RANKING_GUILDS_HOME'] = true; // true = ligar / false = desligar (Ranking de Guilds)                 
-                                    
+$RANKING_HOME_STATS['RANKING_RESETS_WEEK_HOME'] = true; // true = ligar / false = desligar (Ranking de resets semanal)
+$RANKING_HOME_STATS['RANKING_RESETS_MONTH_HOME'] = true; // true = ligar / false = desligar (Ranking de resets mensal)
+$RANKING_HOME_STATS['RANKING_MASTER_RESETS_HOME'] = true; // true = ligar / false = desligar (Ranking de resets mensal)
+$RANKING_HOME_STATS['RANKING_PK_HOME'] = true; // true = ligar / false = desligar (Ranking de PK)
+$RANKING_HOME_STATS['RANKING_LEVELS_HOME'] = true; // true = ligar / false = desligar (Ranking de Levels)
+$RANKING_HOME_STATS['RANKING_GUILDS_HOME'] = true; // true = ligar / false = desligar (Ranking de Guilds)
+
 /*
     @Configurações dos rankings
 */
 $RANKING_CONFIGS['STATS'] = TRUE; //Mostra os status do personagem (Força, Agilidade, Energia, Vitalidade, Comando)
 $RANKING_CONFIGS['GENS'] = TRUE; //Ligar sistema do ranking de gens (Compativel com MuServer ENC Team / X-Team)
-$RANKING_CONFIGS['GENS_MANUFACTURER'] = 1; // 0 = MuServer ENC Team / 1 = X-Team 
+$RANKING_CONFIGS['GENS_MANUFACTURER'] = 1; // 0 = MuServer ENC Team / 1 = X-Team
 
 
 /*
     @Configurações Painel do Usuário.
     @Modulo: Master Reset
-*/                                                                                                                                                                
-$PANELUSER_MODULE['MASTER_RESET']['Bonus']['Active'] = true; //Ativa bonus de Cash ao dar o master reset. 
-$PANELUSER_MODULE['MASTER_RESET']['Bonus']['Amount'] = array(/*Free*/ 10,/*Vip 1*/ 20,/*Vip 2*/ 30,/*Vip 3*/ 30,/*Vip 4*/ 30,/*Vip 5*/ 30); //Quantidade de Cash que o player vai ganhar por Master Reset. 
-$PANELUSER_MODULE['MASTER_RESET']['Bonus']['Columns'] = array("table" => "webCash", "columnUsername" => "username", "columnAmount" => "amount"); //Onde sera creditado o bonus do master reset. 
-$PANELUSER_MODULE['MASTER_RESET']['ResetsRequire'] = array(/*Free*/ 500,/*Vip 1*/ 450,/*Vip 2*/ 400,/*Vip 3*/ 400,/*Vip 4*/ 400,/*Vip 5*/ 400); //Requer X reset para dar o master reset.        
-$PANELUSER_MODULE['MASTER_RESET']['PointsRequire'] = array("Strength" => 32000, "Dexterity" => 32000, "Vitality" => 32000, "Energy" => 32000, "Leadership" => 32000); //Requer X pontos para dar o master reset.        
-$PANELUSER_MODULE['MASTER_RESET']['PointsAfter'] = array("Strength" => 32, "Dexterity" => 32, "Vitality" => 32, "Energy" => 32, "Leadership" => 32); //Após master resetado irá ficar com os status.        
-        
+*/
+$PANELUSER_MODULE['MASTER_RESET']['Bonus']['Active'] = true; //Ativa bonus de Cash ao dar o master reset.
+$PANELUSER_MODULE['MASTER_RESET']['Bonus']['Amount'] = array(/*Free*/ 10,/*Vip 1*/ 20,/*Vip 2*/ 30,/*Vip 3*/ 30,/*Vip 4*/ 30,/*Vip 5*/ 30); //Quantidade de Cash que o player vai ganhar por Master Reset.
+$PANELUSER_MODULE['MASTER_RESET']['Bonus']['Columns'] = array("table" => "webCash", "columnUsername" => "username", "columnAmount" => "amount"); //Onde sera creditado o bonus do master reset.
+$PANELUSER_MODULE['MASTER_RESET']['ResetsRequire'] = array(/*Free*/ 500,/*Vip 1*/ 450,/*Vip 2*/ 400,/*Vip 3*/ 400,/*Vip 4*/ 400,/*Vip 5*/ 400); //Requer X reset para dar o master reset.
+$PANELUSER_MODULE['MASTER_RESET']['PointsRequire'] = array("Strength" => 32000, "Dexterity" => 32000, "Vitality" => 32000, "Energy" => 32000, "Leadership" => 32000); //Requer X pontos para dar o master reset.
+$PANELUSER_MODULE['MASTER_RESET']['PointsAfter'] = array("Strength" => 32, "Dexterity" => 32, "Vitality" => 32, "Energy" => 32, "Leadership" => 32); //Após master resetado irá ficar com os status.
+
 /*
     @Configurações Painel do Usuário.
     @Modulo: Transferir resets
-*/                                                                                                                                                                
-$PANELUSER_MODULE['RESET_TRANSFER']['MIN_REQUIRE'] = 10; //Minimo de resets que podem ser transferidos. 
-                               
+*/
+$PANELUSER_MODULE['RESET_TRANSFER']['MIN_REQUIRE'] = 10; //Minimo de resets que podem ser transferidos.
+
 /*
     @Configurações Painel do Usuário.
     @Modulo: Abrir ticket
-*/                                                                                                                                                                
-$PANELUSER_MODULE['OPEN_TICKET']['MAX_OPEN'] = 1; //Máximo de tickets que um player pode possuir em aberto.        
-                               
+*/
+$PANELUSER_MODULE['OPEN_TICKET']['MAX_OPEN'] = 1; //Máximo de tickets que um player pode possuir em aberto.
+
 /*
     @Configurações Painel do Usuário.
     @Modulo: Confirmar pagamento
-*/                                                                                                                                                                
-$PANELUSER_MODULE['CONFIRM_PAYMENT']['MAX_OPEN'] = 1; //Máximo de pagamentos que um player pode possuir em aberto.        
-               
+*/
+$PANELUSER_MODULE['CONFIRM_PAYMENT']['MAX_OPEN'] = 1; //Máximo de pagamentos que um player pode possuir em aberto.
+
 /*
     @Configurações Painel do Usuário.
     @Modulo: Gravação de logs das ações executadas no painel do usuário.
-*/                                                                                                                                                                
-$PANELUSER_MODULE['LOG']['Active'] = true; //Ativa os logs do painel.                    
-$PANELUSER_MODULE['LOG']['DirLog'] = "logs/paneluser"; //Pasta para gravação dos logs, a pasta deve ficar na raiz do site (OBS: Coloque uma pasta que ninguem saiba e essa pasta deve conter permissão de escrita.).                  
+*/
+$PANELUSER_MODULE['LOG']['Active'] = true; //Ativa os logs do painel.
+$PANELUSER_MODULE['LOG']['DirLog'] = "logs/paneluser"; //Pasta para gravação dos logs, a pasta deve ficar na raiz do site (OBS: Coloque uma pasta que ninguem saiba e essa pasta deve conter permissão de escrita.).
 
 /*
     @Configurações Painel do Game Master / Administrador.
     @Modulo: Gravação de logs das ações executadas no painel.
-*/                                                                                                                                                                
-$PANELADMIN_MODULE['LOG']['Active'] = true; //Ativa os logs do painel.                    
-$PANELADMIN_MODULE['LOG']['DirLog'] = "logs/paneladmin"; //Pasta para gravação dos logs, a pasta deve ficar na raiz do site (OBS: Coloque uma pasta que ninguem saiba e essa pasta deve conter permissão de escrita.).                  
+*/
+$PANELADMIN_MODULE['LOG']['Active'] = true; //Ativa os logs do painel.
+$PANELADMIN_MODULE['LOG']['DirLog'] = "logs/paneladmin"; //Pasta para gravação dos logs, a pasta deve ficar na raiz do site (OBS: Coloque uma pasta que ninguem saiba e essa pasta deve conter permissão de escrita.).
 
 /*
     @Configurações Painel / Administrador.
     @Modulo: Ferramentas para o jogo.
-*/                                                                                                                                                                
-$PANELADMIN_MODULE['JOINSERVER']['IP'] = "season2.mudkt.com.br"; //IP do JoinServer do Servidor.                    
-$PANELADMIN_MODULE['JOINSERVER']['PORT'] = "55970"; //Porta do JoinServer do Servidor.                    
+*/
+$PANELADMIN_MODULE['JOINSERVER']['IP'] = "season2.mudkt.com.br"; //IP do JoinServer do Servidor.
+$PANELADMIN_MODULE['JOINSERVER']['PORT'] = "55970"; //Porta do JoinServer do Servidor.
 
 /*
-    @Configurações do Cronjob. 
-    @Cronjob é um sistema que permite a execução de tarefas automaticamente.                                             
-*/                                                                                                                                                                
+    @Configurações do Cronjob.
+    @Cronjob é um sistema que permite a execução de tarefas automaticamente.
+*/
 $CRON_JOB['Active'] = true; //Ativa o serviço do cron. Coloque true para sim, false para não.
 $CRON_JOB['Debug'] = false; //Ativa o debugger. Coloque true para sim, false para não.
 
 /*
-    @Configurações do sistema de enquetes.                                                                               
-*/                                                                                                                                                                
+    @Configurações do sistema de enquetes.
+*/
 $POLL['LOGIN'] = false; //Para votar deve estar logado? true = sim, false = nao.
 $POLL['HANG_WITH'] = array("type" => 0, //0 = liberar votos sem travas, 1 = travar por ip, 2 = travar por cookie, 3 = travar por IP / cookie
                            "time" => 0); // Tempo em minutos para votar novamente.
- 
+
 /*
-    @Configurações das últimas do forum.                                                                               
-*/                                                                                                                                                                
+    @Configurações das últimas do forum.
+*/
 $FORUM_CONFIGS['ENABLE'] = false; // Ligar / Desligar as ultimas do forum
 $FORUM_CONFIGS['TYPE'] = 1; // 0 = vBulletin, 1 = IPB, 2 = phpBB
 $FORUM_CONFIGS['LAST_TOPICS'] = 5; // Ultimos X tópicos.
@@ -561,20 +561,20 @@ $FORUM_CONFIGS['DATABASE']['DB_NAME'] = "mudkt_fctipb";    // Nome do banco de d
 $FORUM_CONFIGS['DATABASE']['TABLE_PREFIX'] = "ipb_";    // Prefixo no nome das tabelas.
 
 /*
-    @Configurações das noticias.                                                                               
+    @Configurações das noticias.
 */
 $NOTICES['LAST'] = 10; //Mostrar as X ultimas noticias na pagina inicial do site
 $NOTICES['COMMENTS'] = TRUE; //Liga / Desliga a opção de comentários nas noticias
 
 /*
-    @Configurações do evento do castle siege.                                                                               
+    @Configurações do evento do castle siege.
 */
 $CASTLE_SIEGE['ENABLE'] = true; //Liga o banner do evento do castle siege na pagina pricipal do site
 $CASTLE_SIEGE['CONFRONTATION'] = "Domingo as 19:00h"; //Data da batalha do castle siege
 
 /*
     @Configurações de modulos.
-*/                                                                                                                                                                
+*/
 $MODULES['REGISTER'] = array("screenshots", "single");
 
 /*
@@ -583,7 +583,7 @@ $MODULES['REGISTER'] = array("screenshots", "single");
 $PANELUSER_PREMISSIONS['SCREENSHOT'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Gerenciar Screenshots - Painel usuário
 $SCREENSHOTS['MAX_WIDTH'] = 640; //Tamanho máximo da foto normal ao ser enviada...
 $SCREENSHOTS['HOME'] = true; //Exibir top screens na home
-$SCREENSHOTS['TOP_HOME'] = 5; //Exibir até X screens na home 
+$SCREENSHOTS['TOP_HOME'] = 5; //Exibir até X screens na home
 
 /*
     @Bau virtual settings
@@ -639,7 +639,7 @@ $GAME_QUESTION['PREMIUM'] = array(
 /*
     @Configurações Painel do Usuário.
     @Modulo: Coletor de pontos
-*/                                                                                                                                                                
+*/
 $PANELUSER_MODULE['COLLECTOR_POINTS']['REQUIRE'] = array("idCategorie" => 14, "idItem" => 16, "premiumInPoints" => 2); //Categoria do item, Id do item, e pontos em troca de cada item.
 
 ?>
