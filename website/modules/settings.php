@@ -14,12 +14,12 @@
     @Evitando assim que você esqueça de fazer algum tipo de configuração para que a nova versão do site funcione corretamente.
     @Para pegar o valor do updateKeyChangelog, leia o changelog e pegue o numero do update correspondente ao que você está usando.
 */
-define("updateKeyChangelog", 0xBC5EBB21); //Veja a Chave de atualização no Changelog.html que acompanha o site.
+define("updateKeyChangelog", 0x553D1E14); //Veja a Chave de atualização no Changelog.html que acompanha o site.
 
 /*
     @Configurações do serial
 */
-define("countryPreference", 0x02); // Para Brasil 0x01, Estados Unidos da América 0x02
+define("countryPreference", 0x01); // Para Brasil 0x01, Estados Unidos da América 0x02
 define("autenticationCache", true); // Guarda a chave de segurança em cache para não fazer requisições a cada pagina acessada.
 
 /*
