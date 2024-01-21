@@ -51,9 +51,6 @@ if ( class_exists( "ldVersion" ) == false ) {
 
         public function compareCurrentVersion()
         {
-            echo "getEncodeCurrentVersion: " . $this->getEncodeCurrentVersion() . "</br>";
-            echo "updateKeyChangelog: " . constant("updateKeyChangelog") . "</br>";
-            echo "Teste" . "</br>";
             if( defined("updateKeyChangelog") == false )
                 $this->getMessageUpdateNotDefined();
             if( constant("updateKeyChangelog") != $this->getEncodeCurrentVersion() )
