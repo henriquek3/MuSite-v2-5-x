@@ -14,7 +14,9 @@
     @Evitando assim que você esqueça de fazer algum tipo de configuração para que a nova versão do site funcione corretamente.
     @Para pegar o valor do updateKeyChangelog, leia o changelog e pegue o numero do update correspondente ao que você está usando.
 */
+echo "updateKeyChangelog: " . constant("updateKeyChangelog") . "</br>";
 define("updateKeyChangelog", 0x553D1E14); //Veja a Chave de atualização no Changelog.html que acompanha o site.
+echo "updateKeyChangelog: " . constant("updateKeyChangelog") . "</br>";
 
 /*
     @Configurações do serial
