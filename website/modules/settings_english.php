@@ -2,9 +2,9 @@
 /**
 * Configuration file MuSite v2.5.x
 * Be very careful when editing this file.
-* Every 100 bug reports on the site, 80 or more 
+* Every 100 bug reports on the site, 80 or more
 * are due to errors in the configuration of this file!
-* 
+*
 * By Leandro Daldegam
 */
 
@@ -29,7 +29,7 @@ define('HOST', '127.0.0.1'); //Host Database
 define('USER', 'sa'); //Username of Mssql
 define('PWD', '123456'); //Password of Mssql
 define('DATABASE', 'webSite'); //website Databse
-define('DATABASE_ACCOUNTS', 'MuOnline'); //Database which holds the accounts 
+define('DATABASE_ACCOUNTS', 'MuOnline'); //Database which holds the accounts
 define('DATABASE_CHARACTERS', 'MuOnline'); //Database where the characters are stored
 define('PERSISTENT_CONNECTION', false); //Keep the connection with database persistent
 define('USE_MD5', 0); // Uses md5? 0 for no, 1 for yes
@@ -48,7 +48,7 @@ define('COLUMN_PK_RANKING','PkCountWeb');   //Collumn where the Character PKCoun
     @Example    $Config_SMTP['User']        = "daldegam@mudkt.com.br";  //Username server
     @Example    $Config_SMTP['Password']    = "***"; //Password server
     @Example    $Config_SMTP['Debug']       = false; //Debug (For advanced users only)
-    @Example    $Config_SMTP['From']        = "daldegam@mudkt.com.br";  //Sender of email                               
+    @Example    $Config_SMTP['From']        = "daldegam@mudkt.com.br";  //Sender of email
 
     @Example of how to use Google's Gmail SMTP (For Gmail extension = php_openssl.dll must be enabled)
     @Example    $Config_SMTP['Server']      = "ssl://smtp.gmail.com";    //SMTP Server
@@ -56,8 +56,8 @@ define('COLUMN_PK_RANKING','PkCountWeb');   //Collumn where the Character PKCoun
     @Example    $Config_SMTP['User']        = "daldegam@gmail.com";  //Username server
     @Example    $Config_SMTP['Password']    = "***"; //Password server
     @Example    $Config_SMTP['Debug']       = false; //Debug (For advanced users only)
-    @Example    $Config_SMTP['From']        = "daldegam@gmail.com";  //Sender of email  
-        
+    @Example    $Config_SMTP['From']        = "daldegam@gmail.com";  //Sender of email
+
     @Example of how to use the Yahoo SMTP Mail:
     @Example    $Config_SMTP['Server']      = "smtp.mail.yahoo.com.br";    //SMTP Server
     @Example    $Config_SMTP['Port']        = 25;   //SMTP server port 25 or 587
@@ -65,7 +65,7 @@ define('COLUMN_PK_RANKING','PkCountWeb');   //Collumn where the Character PKCoun
     @Example    $Config_SMTP['Password']    = "***"; //Password server
     @Example    $Config_SMTP['Debug']       = false; //Debug (For advanced users only)
     @Example    $Config_SMTP['From']        = "daldegam@yahoo.com.br";  //Sender of email
-    
+
     @CHANGE TO CHANGE THE SETTINGS BELOW:
 */
 $Config_SMTP['Server']      = "smtp.mail.yahoo.com.br";    //SMTP Server
@@ -164,7 +164,7 @@ $PANELUSER_PREMISSIONS['GOLDEN_ARCHER'] = array(/*turn on*/ 1, /*Free*/ 1, /*Vip
 $PANELUSER_PREMISSIONS['COLLECTOR_POINTS'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Collector of points
 $PANELUSER_PREMISSIONS['AUCTIONS'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Auctions
 $PANELUSER_PREMISSIONS['LOG_BUYS'] = array(/*turn on*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Log shopping
-$PANELUSER_PREMISSIONS['MODIFY_PERSONALID'] = array(/*turn on*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Change personal ID     
+$PANELUSER_PREMISSIONS['MODIFY_PERSONALID'] = array(/*turn on*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Change personal ID
 $PANELUSER_PREMISSIONS['RESET'] = array(/*turn on*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Reset
 $PANELUSER_PREMISSIONS['MASTER_RESET'] = array(/*turn on*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Master Reset
 $PANELUSER_PREMISSIONS['RESET_TRANSFER'] = array(/*turn on*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Transfer reset
@@ -232,7 +232,7 @@ $PANELUSER_MODULE['RESET']['151-200']['LevelReset'] = array(/*Free*/ 300,/*Vip 1
 $PANELUSER_MODULE['RESET']['151-200']['LevelAfter'] = array(/*Free*/ 1,/*Vip 1*/ 6,/*Vip 2*/ 12,/*Vip 3*/ 12,/*Vip 4*/ 12,/*Vip 5*/ 12); //Level X after Reset, 151 to 200 resets.
 $PANELUSER_MODULE['RESET']['151-200']['ZenRequire'] = array(/*Free*/ 50000000,/*Vip 1*/ 30000000,/*Vip 2*/ 10000000,/*Vip 3*/ 100000,/*Vip 4*/ 100000,/*Vip 5*/ 100000); //Need X zen to reset 151 - 200 resets.
 $PANELUSER_MODULE['RESET']['151-200']['Points'] = array(/*Free*/ 350,/*Vip 1*/ 550,/*Vip 2*/ 800,/*Vip 3*/ 1000,/*Vip 4*/ 1000,/*Vip 5*/ 1000); //Receive X points per reset from 151 to 200 resets.
-$PANELUSER_MODULE['RESET']['151-200']['CleanItens'] = array(/*Free*/ true,/*Vip 1*/ false,/*Vip 2*/ false,/*Vip 3*/ false,/*Vip 4*/ false,/*Vip 5*/ false; //Clear the items after Reset from 151 to 200 resets.
+$PANELUSER_MODULE['RESET']['151-200']['CleanItens'] = array(/*Free*/ true,/*Vip 1*/ false,/*Vip 2*/ false,/*Vip 3*/ false,/*Vip 4*/ false,/*Vip 5*/ false); //Clear the items after Reset from 151 to 200 resets.
 $PANELUSER_MODULE['RESET']['151-200']['CleanMagics'] = array(/*Free*/ true,/*Vip 1*/ false,/*Vip 2*/ false,/*Vip 3*/ false,/*Vip 4*/ false,/*Vip 5*/ false); //Clear the MagicList after Reset from 151 to 200 resets.
 $PANELUSER_MODULE['RESET']['151-200']['CleanQuests'] = array(/*Free*/ true,/*Vip 1*/ false,/*Vip 2*/ false,/*Vip 3*/ false,/*Vip 4*/ false,/*Vip 5*/ false); //Clear the Quest after Reset from 151 to 200.
 
@@ -276,7 +276,7 @@ $PANELUSER_MODULE['DISTRIBUTE_POINTS']['MAXPOINTS'] = 32767; //Max allowed point
     @User Panel Settings.
     @Module: Character Move
 */
-$PANELUSER_MODULE['MOVE_CHARACTER']['MAPS'] = array(/*Map Number, Map Name, Coordenate X, Coordenate Y*/    
+$PANELUSER_MODULE['MOVE_CHARACTER']['MAPS'] = array(/*Map Number, Map Name, Coordenate X, Coordenate Y*/
                                                     array(0,"Lorencia",147,127),
                                                     array(1,"Dungeon",107,247),
                                                     array(2,"Davias",197,46),
@@ -307,7 +307,7 @@ $PANELUSER_MODULE['MOVE_CHARACTER']['MAPS'] = array(/*Map Number, Map Name, Coor
                                                     array(79, "LorenMarket", 126, 142),
                                                     array(80, "Karutan", 124, 123)
                                                 );
-                                                
+
 /*
     @User Panel Settings.
     @Module: Buy Vip Silver or Vip Gold
@@ -342,7 +342,7 @@ $Config_SMS[0]['Email_Sufixo']        = "@clarotorpedo.com.br";    //mobile prov
 /*
     @Class Settings.
 */
-$CLASS_CHARACTERS['CLASSCODES'] = array(/*IDENTIFICATION*/ /*CLASSCODE*/ /*CLASSNAME*/ 
+$CLASS_CHARACTERS['CLASSCODES'] = array(/*IDENTIFICATION*/ /*CLASSCODE*/ /*CLASSNAME*/
                                         "DW" => array(0, "Dark Wizard"),
                                         "SM" => array(1, "Soul Master"),
                                         "GM" => array(2, "Grand Master"), //Algumas versões usam 3
@@ -362,7 +362,7 @@ $CLASS_CHARACTERS['CLASSCODES'] = array(/*IDENTIFICATION*/ /*CLASSCODE*/ /*CLASS
                                         "RF" => array(96, "Rage Fighter"),
                                         "FM" => array(98, "Fist Master")
                                         );
-                                        
+
 /*
     @Register Settings
 */
@@ -376,12 +376,12 @@ $REGISTER_SETTINGS['BONUS_CASH']['AMOUNT'] = 0; //Default Coin Value to receive 
 $REGISTER_SETTINGS['BONUS_CASH']['AMOUNT2'] = 0; //Default Coin Value to receive from the second coin type of the site.
 
 $REGISTER_SETTINGS['BONUS_ITEM']['ACTIVE'] = TRUE; //Activates the bonus item when you sign up
-$REGISTER_SETTINGS['BONUS_ITEM']['VERSION'] = 3; //1 = (Old Version without personal store [97d]), 2 = (Old versions with personal store [1.0]), 3 = (New versions with personal store e harmony [1.02n or more]) 
+$REGISTER_SETTINGS['BONUS_ITEM']['VERSION'] = 3; //1 = (Old Version without personal store [97d]), 2 = (Old versions with personal store [1.0]), 3 = (New versions with personal store e harmony [1.02n or more])
 /**
 * How to configure the item bonus system:
 * The system is configurated by default to give a blade knight kit, Soul Master kit or Muse Elf kit when a new player sign up, to register more itens or kits, follow the example logic;
 * Attention, even if you use old versions that has no sockets and harmony, don't remove the option, just put the corresponding value as this options turned off!
-* 
+*
 * The option: "Name", must contain the kit name to be deliveled to player
 * The option: "Items", must contain the items to be delivered to player
 *   Within the option "items" are the properties:
@@ -402,7 +402,7 @@ $REGISTER_SETTINGS['BONUS_ITEM']['VERSION'] = 3; //1 = (Old Version without pers
 */
 $REGISTER_SETTINGS['BONUS_ITEM']['ITEMS'] = array(
     array(
-        "Name" => "Kit de Blade Knight", 
+        "Name" => "Kit de Blade Knight",
         "Items" => array(
             array("idCategorie" => 7, "idItem" => 17, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
             array("idCategorie" => 8, "idItem" => 17, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
@@ -414,7 +414,7 @@ $REGISTER_SETTINGS['BONUS_ITEM']['ITEMS'] = array(
         )
     ),
     array(
-        "Name" => "Kit de Soul Master", 
+        "Name" => "Kit de Soul Master",
         "Items" => array(
             array("idCategorie" => 7, "idItem" => 22, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
             array("idCategorie" => 8, "idItem" => 22, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
@@ -426,7 +426,7 @@ $REGISTER_SETTINGS['BONUS_ITEM']['ITEMS'] = array(
         )
     ),
     array(
-        "Name" => "Kit de Muse Elf", 
+        "Name" => "Kit de Muse Elf",
         "Items" => array(
             array("idCategorie" => 7, "idItem" => 24, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
             array("idCategorie" => 8, "idItem" => 24, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
@@ -447,104 +447,104 @@ $TABLES_CONFIGS['WEBVIPS'] = array("database" => DATABASE, //webSite || MuOnline
                                    "table" => "webVips", //webVips || MEMB_INFO
                                    "columnUsername" => "username", //username || memb___id
                                    "columnType" => "type", //type || vip
-                                   "columnDateBegin" => "dateBegin", 
+                                   "columnDateBegin" => "dateBegin",
                                    "columnDateEnd" => "dateEnd",
                                    "columnDateEndInteger" => "dateEndInteger");
-                                   
+
 $TABLES_CONFIGS['WEBCASH'] = array("database" => DATABASE, //webSite || MuOnline
                                    "table" => "webCash", //webCash || MEMB_INFO
                                    "columnUsername" => "username", //username || memb___id
                                    "columnAmount" => "amount", //amount || gold
                                    "columnAmount2" => "amount2", //amount2 || gold2
-                                   "columnPoints" => "points"); //points 
-  
+                                   "columnPoints" => "points"); //points
+
 /*
     @Website Front Page Ranking settings
 */
-$RANKING_HOME_CONFIGS['TOPAMOUNT'] = 4; //How many TOP Rankings to display on the front page                     
+$RANKING_HOME_CONFIGS['TOPAMOUNT'] = 4; //How many TOP Rankings to display on the front page
 $RANKING_HOME_STATS['RANKING_RESETS_HOME'] = true; // true = Show / false = Hide (Reset Ranking)
-$RANKING_HOME_STATS['RANKING_RESETS_WEEK_HOME'] = true; // true = Show / false = Hide (Weekly Reset Ranking)  
-$RANKING_HOME_STATS['RANKING_RESETS_MONTH_HOME'] = true; // true = Show / false = Hide (Monthly Reset Ranking)  
-$RANKING_HOME_STATS['RANKING_MASTER_RESETS_HOME'] = true; // true = Show / false = Hide (Master Reset Ranking)  
-$RANKING_HOME_STATS['RANKING_PK_HOME'] = true; // true = Show / false = Hide (PK Ranking)  
-$RANKING_HOME_STATS['RANKING_LEVELS_HOME'] = true; // true = Show / false = Hide (Level Ranking)  
-$RANKING_HOME_STATS['RANKING_GUILDS_HOME'] = true; // true = Show / false = Hide (Guild Ranking)                 
-                                    
+$RANKING_HOME_STATS['RANKING_RESETS_WEEK_HOME'] = true; // true = Show / false = Hide (Weekly Reset Ranking)
+$RANKING_HOME_STATS['RANKING_RESETS_MONTH_HOME'] = true; // true = Show / false = Hide (Monthly Reset Ranking)
+$RANKING_HOME_STATS['RANKING_MASTER_RESETS_HOME'] = true; // true = Show / false = Hide (Master Reset Ranking)
+$RANKING_HOME_STATS['RANKING_PK_HOME'] = true; // true = Show / false = Hide (PK Ranking)
+$RANKING_HOME_STATS['RANKING_LEVELS_HOME'] = true; // true = Show / false = Hide (Level Ranking)
+$RANKING_HOME_STATS['RANKING_GUILDS_HOME'] = true; // true = Show / false = Hide (Guild Ranking)
+
 /*
     @Website Front Page Ranking settings
 */
 $RANKING_CONFIGS['STATS'] = TRUE; //Show the character status (Strengh, Agility, Energy, Vitality, Comand)
 $RANKING_CONFIGS['GENS'] = TRUE; //Turn on the Gens Ranking System (compatible with ENC Team MuServer)
-$RANKING_CONFIGS['GENS_MANUFACTURER'] = 1; // 0 = MuServer ENC Team / 1 = X-Team 
+$RANKING_CONFIGS['GENS_MANUFACTURER'] = 1; // 0 = MuServer ENC Team / 1 = X-Team
 
 
 /*
     @User Panel Settings
     @Module: Master Reset
-*/                                                                                                                                                                
-$PANELUSER_MODULE['MASTER_RESET']['Bonus']['Active'] = true; //Activate Cash Bonus after Master Resetting. 
+*/
+$PANELUSER_MODULE['MASTER_RESET']['Bonus']['Active'] = true; //Activate Cash Bonus after Master Resetting.
 $PANELUSER_MODULE['MASTER_RESET']['Bonus']['Amount'] = array(/*Free*/ 10,/*Vip 1*/ 20,/*Vip 2*/ 30,/*Vip 3*/ 30,/*Vip 4*/ 30,/*Vip 5*/ 30); //Cash Amount to receive per MReset after Master Resetting.
-$PANELUSER_MODULE['MASTER_RESET']['Bonus']['Columns'] = array("table" => "webCash", "columnUsername" => "username", "columnAmount" => "amount"); //Table where the bonus will be stored 
-$PANELUSER_MODULE['MASTER_RESET']['ResetsRequire'] = array(/*Free*/ 500,/*Vip 1*/ 450,/*Vip 2*/ 400,/*Vip 3*/ 400,/*Vip 4*/ 400,/*Vip 5*/ 400); //Required Reset Number to Master Reset.        
+$PANELUSER_MODULE['MASTER_RESET']['Bonus']['Columns'] = array("table" => "webCash", "columnUsername" => "username", "columnAmount" => "amount"); //Table where the bonus will be stored
+$PANELUSER_MODULE['MASTER_RESET']['ResetsRequire'] = array(/*Free*/ 500,/*Vip 1*/ 450,/*Vip 2*/ 400,/*Vip 3*/ 400,/*Vip 4*/ 400,/*Vip 5*/ 400); //Required Reset Number to Master Reset.
 $PANELUSER_MODULE['MASTER_RESET']['PointsRequire'] = array("Strength" => 32000, "Dexterity" => 32000, "Vitality" => 32000, "Energy" => 32000, "Leadership" => 32000); //Required X point to master reset.
 $PANELUSER_MODULE['MASTER_RESET']['PointsAfter'] = array("Strength" => 32, "Dexterity" => 32, "Vitality" => 32, "Energy" => 32, "Leadership" => 32); //Status point after master reset.
-        
+
 /*
     @User Panel Settings
     @Module: Resets Transfer
-*/                                                                                                                                                                
+*/
 $PANELUSER_MODULE['RESET_TRANSFER']['MIN_REQUIRE'] = 10; //Minimum Reset to be transfered.
-                               
+
 /*
     @User Panel Settings
     @Module: Open a ticket
-*/                                                                                                                                                                
-$PANELUSER_MODULE['OPEN_TICKET']['MAX_OPEN'] = 1; //Max Opened Ticket per Player.      
+*/
+$PANELUSER_MODULE['OPEN_TICKET']['MAX_OPEN'] = 1; //Max Opened Ticket per Player.
 
 /*
-    @User Panel Settings 
+    @User Panel Settings
     @Modulo: Confirm PAYMENT
-*/                                                                                                                                                                
+*/
 $PANELUSER_MODULE['CONFIRM_PAYMENT']['MAX_OPEN'] = 1; //MAX Opened Payment per Player.
-               
+
 /*
     @User Panel Settings
     @Module: Logs write from actions taken by the User Panel.
-*/                                                                                                                                                                
+*/
 $PANELUSER_MODULE['LOG']['Active'] = true; //Activates Panel Log
 $PANELUSER_MODULE['LOG']['DirLog'] = "logs/paneluser"; //Folder where the logs are stored. Must be at site root directory. (PS: Choose a hard name for the folder and it must have writting permissions.)
 
 /*
     @Game Master / Administrador Panel Settings
     @Module: Logs write from actions taken by the Panel.
-*/                                                                                                                                                                
+*/
 $PANELADMIN_MODULE['LOG']['Active'] = true; //Activates Panel Log
 $PANELADMIN_MODULE['LOG']['DirLog'] = "logs/paneladmin"; //Folder where the logs are stored. Must be at site root directory. (PS: Choose a hard name for the folder and it must have writting permissions.)
 
 /*
     @Administrador Panel Settings
     @Module: Game tools.
-*/                                                                                                                                                                
+*/
 $PANELADMIN_MODULE['JOINSERVER']['IP'] = "127.0.0.1"; //Joinserver IP.
 $PANELADMIN_MODULE['JOINSERVER']['PORT'] = "55970"; //JoinServer Port.
 
 /*
-    @Cronjob settings. 
+    @Cronjob settings.
     @Cronjob is a system which allow tasks executions automatically.
-*/                                                                                                                                                                
+*/
 $CRON_JOB['Active'] = true; //Activate cronjob service. true for yes and false for no.
 $CRON_JOB['Debug'] = false; //Activate the debugger. true for yes and false for no.
 
 /*
-    @Pooling System settings.                                                                               
-*/                                                                                                                                                                
+    @Pooling System settings.
+*/
 $POLL['LOGIN'] = true; //Must be logged to vote. true = yes, false = no.
 $POLL['HANG_WITH'] = array("type" => 2, //0 = vote with no lock, 1 = lock per ip, 2 = lock by cookie, 3 = lock per IP and cookie
                            "time" => 1); // Time in minutes between each vote.
- 
+
 /*
-    @Latest Forum News Settings.                                                                               
-*/                                                                                                                                                                
+    @Latest Forum News Settings.
+*/
 $FORUM_CONFIGS['ENABLE'] = false; // On / Off Latest Forum News
 $FORUM_CONFIGS['TYPE'] = 1; // 0 = vBulletin, 1 = IPB, 2 = phpBB
 $FORUM_CONFIGS['LAST_TOPICS'] = 5; // Latest X topics.
@@ -574,7 +574,7 @@ $CASTLE_SIEGE['CONFRONTATION'] = "Sábado as 15:00h"; //Siege Date
 
 /*
     @Modules Settings
-*/                                                                                                                                                                
+*/
 $MODULES['REGISTER'] = array("screenshots");
 
 /*
@@ -639,7 +639,7 @@ $GAME_QUESTION['PREMIUM'] = array(
 /*
     @User Panel Settings.
     @Module: Collector of points
-*/                                                                                                                                                                
+*/
 $PANELUSER_MODULE['COLLECTOR_POINTS']['REQUIRE'] = array("idCategorie" => 14, "idItem" => 16, "premiumInPoints" => 2); //Categorie item, id item, points per item.
 
 ?>
