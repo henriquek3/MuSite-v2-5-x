@@ -1,11 +1,14 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE);
+
+echo "extension_loaded: " . extension_loaded("mssql");
+
 require("modules/autoload.php");
 require("modules/settings.php");
 session_name(SESSION_NAME);
-session_start();  
+session_start();
 
-$ldVersion = new ldVersion();           
+$ldVersion = new ldVersion();
 $ldVersion->setCurrentVersion("2.5.4");
 $ldVersion->compareCurrentVersion();
 
@@ -13,11 +16,11 @@ $ldSecurity = new ldSecurity();
 $ldTime = new ldTime();
 $ldMssql = new ldMssql();
 $ldTpl = new ldTpl();
-if($_GET['page'] != "ajax")    
-    $ldGeneral = new ldGeneral(); 
-    
+if ($_GET['page'] != "ajax")
+    $ldGeneral = new ldGeneral();
+
 new ldLanguage("commontexts", true);
-                   
+
 switch($_GET['page'])
 {
     case "ajax":
@@ -37,8 +40,8 @@ switch($_GET['page'])
     case "panelgamemaster":
         $ldPanelGameMaster = new ldPanelGameMaster();
         break;
-    case "register":                   
-        $ldRegister = new ldRegister();  
+    case "register":
+        $ldRegister = new ldRegister();
         $ldTpl->open("templates/".TEMPLATE_DIR."/register.tpl.php");
         break;
     case "downloads":
@@ -60,7 +63,7 @@ switch($_GET['page'])
             case "howToBuy": $ldTpl->open("templates/".TEMPLATE_DIR."/vips[howtobuy].tpl.php"); break;
             case "howToBuyVips": $ldVips->loadHowToBuyVips(); $ldTpl->open("templates/".TEMPLATE_DIR."/vips[howtobuyvips].tpl.php"); break;
             default: $ldTpl->open("templates/".TEMPLATE_DIR."/vips.tpl.php"); break;
-        }        
+        }
         break;
     case "readNotice":
         $ldNotice = new ldNotice();
@@ -75,21 +78,21 @@ switch($_GET['page'])
         switch($_GET['type'])
         {
             case "password": case "confirm": $ldTpl->open("templates/".TEMPLATE_DIR."/recovery[password].tpl.php"); break;
-        }        
+        }
         break;
     case "captcha":
         $ldCaptcha = new ldCaptcha();
         break;
-    case "custonPage":                    
+    case "custonPage":
         $ldHome = new ldHome();
         $ldTpl->open("templates/".TEMPLATE_DIR."/{$_GET['template']}.tpl.php");
         break;
-    case "banned":                    
+    case "banned":
         $ldBanned = new ldBanned();
         $ldTpl->open("templates/".TEMPLATE_DIR."/banned.tpl.php"); break;
         break;
-    case "loadModule":                     
-        $ldHome = new ldHome();                   
+    case "loadModule":
+        $ldHome = new ldHome();
         $ldModules = new ldModules($_GET['module']);
         break;
     default:
@@ -101,7 +104,7 @@ $ldTpl->set("ResultTime", $ldTime->Result_Time());
 $ldTpl->show();
 if($CRON_JOB['Debug'] == true)
     echo "\n<!-- Begin Cronjob -->\n\t<div style='width: 617px; height: 250px; overflow: scroll;'>\n\t\t<img src=\"modules/classes/cronjob.class.php?temp=".time()."\" />\n\t</div>\n<!-- End Cronjob -->";
-else    
+else
     echo "\n<!-- Begin Cronjob -->\n\t<img src=\"modules/classes/cronjob.class.php?temp=".time()."\" />\n<!-- End Cronjob -->";
 echo "\n\n<!-- Web Site v{$ldVersion->getCurrentVersion()} desenvolvido por Leandro Daldegam -->";
 ?>
